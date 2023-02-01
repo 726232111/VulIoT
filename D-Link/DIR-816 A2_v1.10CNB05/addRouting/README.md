@@ -3,7 +3,7 @@
 ## Overview
 
 - Manufacturer's address：http://www.dlink.com.cn/
-- Firmware download address ： http://support.dlink.com.cn/ProductInfo.aspx?m=DIR-816
+- Firmware download address ： http://www.dlink.com.cn/techsupport/ProductInfo.aspx?m=DIR-816
 
 ## Affected version
 

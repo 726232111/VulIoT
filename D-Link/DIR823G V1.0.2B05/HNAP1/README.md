@@ -1,4 +1,4 @@
-# DIR-816A2_FWv1.10CNB05_R1B011D88210.img Stack overflow vulnerability
+# DIR823G_V1.0.2B05_20181207.bin Command execution vulnerability
 
 ## Overview
 
@@ -15,7 +15,7 @@ Below is the latest firmware
 
 The parameter a7 is the post request data, and a7 is spliced ​​into v11 as log data, and then v11 is executed as a system command.
 
-![](img/2.png#center)
+![](img/2.jpg#center)
 
 This vulnerability can be triggered when the SOAPAction is any of the following urls.
     http://purenetworks.com/HNAP1/SetMultipleActions
@@ -122,9 +122,9 @@ This vulnerability can be triggered when the SOAPAction is any of the following 
 
 ## Vulnerability verify
 
-![](img/3.png#center)
+![](img/3.jpg#center)
 
-![](img/4.png#center)
+![](img/4.jpg#center)
 
 ## POC
 

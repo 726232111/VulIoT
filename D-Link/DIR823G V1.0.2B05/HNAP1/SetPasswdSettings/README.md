@@ -1,4 +1,4 @@
-# DIR-816A2_FWv1.10CNB05_R1B011D88210.img Stack overflow vulnerability
+# DIR823G_V1.0.2B05_20181207.bin Reset password vulnerability
 
 ## Overview
 
@@ -15,12 +15,12 @@ Below is the latest firmware
 
 35 lines of code try to process the incoming password, if the processing fails, execute 53 lines of code to set the password to empty.
 
-![](img/2.png#center)
+![](img/2.jpg#center)
 
 
 ## Vulnerability verify
 
-![](img/3.gifg#center)
+![](img/3.gif#center)
 
 
 ## POC

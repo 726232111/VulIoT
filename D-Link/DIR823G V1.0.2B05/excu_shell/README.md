@@ -1,4 +1,4 @@
-# DIR-816A2_FWv1.10CNB05_R1B011D88210.img Stack overflow vulnerability
+# DIR823G_V1.0.2B05_20181207.bin Command execution vulnerability
 
 ## Overview
 
@@ -15,12 +15,12 @@ Below is the latest firmware
 
 The handler for the EXCU_SHEL path will detect the command in the request and execute it.
 
-![](img/2.png#center)
+![](img/2.jpg#center)
 
 
 ## Vulnerability verify
 
-![](img/3.png#center)
+![](img/3.jpg#center)
 
 
 ## POC

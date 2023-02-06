@@ -1,4 +1,4 @@
-# DIR-816A2_FWv1.10CNB05_R1B011D88210.img Stack overflow vulnerability
+# DIR823G_V1.0.2B05_20181207.bin Stack overflow vulnerability
 
 ## Overview
 
@@ -15,17 +15,17 @@ Below is the latest firmware
 
 When the program processes URL1 to URL8 parameters, it uses the size of the parameter string as maxlen, which will cause a buffer overflow.
 
-![](img/2.png#center)
+![](img/2.jpg#center)
 
 When the program processes hostname parameter, it uses the size of the parameter string as maxlen, which will cause a buffer overflow.
-![](img/3.png#center)
+![](img/3.jpg#center)
 
 
 ## URL parameter
 
 ### Vulnerability verify
 
-![](img/4.png#center)
+![](img/4.jpg#center)
 
 
 
@@ -41,7 +41,7 @@ curl http://192.168.0.1/HNAP1/ -H 'SOAPAction: "http://purenetworks.com/HNAP1/Se
 
 ### Vulnerability verify
 
-![](img/5.png#center)
+![](img/5.jpg#center)
 
 
 

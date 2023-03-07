@@ -14,11 +14,11 @@ Below is the latest firmware
 ## Vulnerability details
 
 
-sub_425CB0 called sub_425830, where a2 is to get the password string and v6 is the stack pointer.
+sub_425CB0 called sub_425830, where a2 is the password string and v6 is the stack pointer.
 
 ![](img/3.jpg#center)
 
-sub_425830 first obtains the string length (v6), then judges whether the data is a number or a letter, and then calls the strtol function to convert two consecutive characters into hexadecimal data and writes it into a2. a2 is the stack address passed in by sub_425CB0, and the data size is not checked in this function, which will lead to buffer overflow.
+sub_425830 first obtains the string length (v6), then judges whether the data is a number or a letter, and then calls the strtol function to convert two consecutive characters into hexadecimal data and writes it into a2. a2 is the stack address passed in by sub_425CB0, and the string length is not checked in this function, which will lead to buffer overflow.
 
 ![](img/2.jpg#center)
 

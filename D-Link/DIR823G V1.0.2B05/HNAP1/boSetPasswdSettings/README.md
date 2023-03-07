@@ -1,4 +1,4 @@
-# DIR823G_V1.0.2B05_20181207.bin SetPasswdSettings Buffer Overflow vulnerability
+# DIR823G_V1.0.2B05_20181207.bin SetPasswdSettings Buffer Overflow Vulnerability
 
 ## Overview
 

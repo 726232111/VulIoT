@@ -34,6 +34,7 @@ This vulnerability can be triggered when the SOAPAction is any of the following 
     http://purenetworks.com/HNAP1/GetDeviceDomainName
     http://purenetworks.com/HNAP1/GetDeviceSettings
     http://purenetworks.com/HNAP1/GetDHCPClientInfo
+    http://purenetworks.com/HNAP1/Login
     http://purenetworks.com/HNAP1/GetDMZSettings
     http://purenetworks.com/HNAP1/GetFactoryDefault
     http://purenetworks.com/HNAP1/GetFirewallSettings

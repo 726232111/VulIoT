@@ -4,7 +4,7 @@
 
 - Manufacturer's address：http://www.dlink.com.cn/
 - Firmware download address ： http://www.dlink.com.cn/techsupport/ProductInfo.aspx?m=DIR-823G
-
+- CVE：CVE-2023-26612、CVE-2023-26616
 ## Affected version
 
 Below is the latest firmware
